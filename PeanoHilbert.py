@@ -114,12 +114,14 @@ def PeanoHilbert(d,verbose=False,sub=False):
 
 if __name__ == "__main__":
     
-    d = 24
+    d = 12
     
     primes = prime_factors(d)
     assert prime_check(d)
     
     map = PeanoHilbert(d,verbose=1)
+    
+    print(map)
     
     import matplotlib.pyplot as plt
     

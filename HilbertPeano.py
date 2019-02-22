@@ -114,6 +114,8 @@ if __name__ == "__main__":
     
     map = HilbertPeano(d,verbose=0)
     
+    print(map)
+    
     import matplotlib.pyplot as plt
     
     plt.imshow(map)
