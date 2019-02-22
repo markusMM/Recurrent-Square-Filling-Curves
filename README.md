@@ -29,7 +29,7 @@ do exist.
 
 
 #### Peano-hilbert
-<
+```python
 [[106 107 110 108 112 114 116 117 138 139 142 140]
  [104 105 111 109 113 115 118 119 136 137 143 141]
  [ 97  99 102 103 120 121 127 125 129 131 134 135]
@@ -42,10 +42,13 @@ do exist.
  [  8   9  15  13  17  19  22  23  40  41  47  45]
  [  1   3   6   7  24  25  31  29  33  35  38  39]
  [  0   2   4   5  26  27  30  28  32  34  36  37]]
->
+```
+
+![alt text](https://github.com/markusMM/Recurrent-Square-Filling-Curves/raw/master/plot/12x12_PeanoHilbert.png "12x12 Peano-Hilbert")
+
 
 #### Hilbert-Peano
-<
+```python
 [[ 47  48  49  58  59  60  83  84  85  94  95  96]
  [ 46  51  50  57  56  61  82  87  86  93  92  97]
  [ 45  52  53  54  55  62  81  88  89  90  91  98]
@@ -58,7 +61,9 @@ do exist.
  [  4   5   6  17  14  13 130 129 126 137 138 139]
  [  3   2   7  16  15  12 131 128 127 136 141 140]
  [  0   1   8   9  10  11 132 133 134 135 142 143]]
->
+```
+
+![alt text](https://github.com/markusMM/Recurrent-Square-Filling-Curves/raw/master/plot/12x12_HilbertPeano.png "12x12 Hilbert-Peano")
 
 
 ## Notes
