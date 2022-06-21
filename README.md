@@ -1,5 +1,5 @@
 # Recurrent-Square-Filling-Curves
-Recurrent functions which use the Hilbert, Peano and Z curves to fill squares of many $2^m x 2^m$ dimensionalities. Those funtions do mainly output a 2D map of the output curve. It is meant to be a more efficient symmetric mapping of 2D images into 1D lin spaces. *1
+Recurrent functions which use the Hilbert, Peano and Z curves to fill squares of many $2^m \times 2^m$ dimensionalities. Those funtions do mainly output a 2D map of the output curve. It is meant to be a more efficient symmetric mapping of 2D images into 1D lin spaces. *1
 
 ## Content
 In this repo are two recursive funtions:
@@ -7,12 +7,12 @@ In this repo are two recursive funtions:
 ### Recursive Hilbert-Peano Function
  
 it can break down from any dxd square which is not a multiple of a prime number
-it has an asymetric 3x3 base in case of a hulbert structure before.
+it has an asymetric $3 \times 3$ base in case of a hulbert structure before.
 
 ### Recursive Peano-Hilbert Function
  
-it can break down from any d*d square which is not a multiple of a prime number
-it has a reverse z-curve for any 2^m * 2^m blocks inside 3^n * 3^n blocks.
+it can break down from any $d \times d$ square which is not a multiple of a prime number
+it has a reverse z-curve for any $2^m \times 2^m$ blocks inside $3^n \times 3^n$ blocks.
  
 This is the Peano-Hilbert version of the Hilbert-Peano function I have imple-
 mented before. 
