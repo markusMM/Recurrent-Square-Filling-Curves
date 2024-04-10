@@ -2,7 +2,7 @@
 """
 Created on Wed Aug 29 08:37:53 2018
 
-Markus' Recursive Hilbert-Peano fcn
+Markus' Recursive Hilbert-Peano Function
 
 it can break down from any dxd square which is not a multiple of a prime number
 it has an asymetric 3x3 base in case of a hulbert structure before.
