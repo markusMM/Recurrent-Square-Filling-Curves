@@ -13,11 +13,20 @@ curve. -> A completely centered solution for square 2D space fillings.
 @author: Markus Meister
 """
 
-#%% -- imports --
+# %% -- imports --
 import numpy as np
 
-#%% -- helpers --
+# %% -- helpers --
 def prime_factors(n):
+    """
+    Returns the prime factors of a given number.
+
+    Args:
+        n (int): The number to factorize.
+
+    Returns:
+        list: A list of prime factors of the input number.
+    """
     i = 2
     factors = []
     while i * i <= n:
@@ -31,6 +40,15 @@ def prime_factors(n):
     return factors
 
 def prime_check(n):
+    """
+    Checks if a number is a prime.
+
+    Args:
+        n (int): The number to check for primality.
+
+    Returns:
+        bool: True if the input number is prime, False otherwise.
+    """
     primes = prime_factors(n)
     mod = True
     for prime in primes:
@@ -38,8 +56,19 @@ def prime_check(n):
             mod = False
     return mod
 
-#%% -- main function --
+# %% -- main function --
 def hilbert_peano(d, verbose=False, sub=False):
+    """
+    Generate a Hilbert-Peano curve map of size dxd.
+
+    Args:
+        d (int): The size of the map (dxd).
+        verbose (bool, optional): If True, prints additional information. Defaults to False.
+        sub (bool, optional): If True, indicates that it's a submap. Defaults to False.
+
+    Returns:
+        numpy.ndarray: A 2D array representing the Hilbert-Peano curve map.
+    """
     map = np.zeros([d, d], dtype=int)
     hil = not np.ceil(np.mod(d, 2)) or d == 2
     
@@ -88,7 +117,7 @@ def hilbert_peano(d, verbose=False, sub=False):
             map = bas
     return map
 
-#%% -- main test --
+# %% -- main demo --
 if __name__ == "__main__":
     d = 12
     primes = prime_factors(d)
